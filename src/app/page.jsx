@@ -70,7 +70,7 @@ export default function ModernPortfolio() {
     Backend: [
       { name: "Node.js", icon: "/icons/node.svg" },
       { name: "Express.js", icon: "/icons/express-js.png" },
-      { name: "GraphQL", icon: "/icons/graphql.png" },
+      { name: "GraphQL", icon: "/icons/GraphQL.png" },
     ],
     Database: [
       { name: "MySQL", icon: "/icons/mysql.png" },
@@ -80,7 +80,7 @@ export default function ModernPortfolio() {
       { name: "GitHub", icon: "/icons/github.svg" },
       { name: "Postman", icon: "/icons/postman.svg" },
       { name: "Figma", icon: "/icons/figma.png" },
-      { name: "TypeScript", icon: "/icons/typescript.png" },
+      { name: "TypeScript", icon: "/icons/Typescript.png" },
     ],
   };
 
