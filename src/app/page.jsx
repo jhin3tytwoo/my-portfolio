@@ -293,7 +293,7 @@ export default function ModernPortfolio() {
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
               >
                 <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                GitHub ของฉัน
+                View My GitHub
                 <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
