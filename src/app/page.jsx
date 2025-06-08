@@ -247,7 +247,7 @@ export default function ModernPortfolio() {
 
               {/* Name and Title */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent leading-tight">
-                Hi, I&apos;m
+                Hi, I'm
                 <br />
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Hanafi Yaming
@@ -525,10 +525,9 @@ export default function ModernPortfolio() {
         <footer className="bg-gradient-to-r from-gray-900 to-black text-white py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">Let&apos;s Connect!</h3>
+              <h3 className="text-2xl font-bold mb-4">Let's Connect!</h3>
               <p className="text-gray-300 mb-6">
-                &quot;Ready to work with a great team and build exciting
-                projects.&quot;
+                "Ready to work with a great team and build exciting projects."
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 <div className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors group">
