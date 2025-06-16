@@ -12,8 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "hanafi-portfolio",
-  description: "hanafi-portfolio",
+  title: "Hanafi Yaming – Web Developer Portfolio",
+  description:
+    "ดูผลงาน พอร์ตโฟลิโอ และประสบการณ์ของ Hanafi Yaming นักพัฒนาเว็บสาย Fullstack ที่เชี่ยวชาญทั้ง Frontend และ Backend",
   icons: {
     icon: "/favicon.ico",
   },
