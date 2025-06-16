@@ -16,6 +16,8 @@ import {
   Star,
   Menu,
   X,
+  FileDown,
+  ArrowDownCircle,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -66,6 +68,10 @@ export default function ModernPortfolio() {
       { name: "Next.js", icon: "/icons/nextjs.svg" },
       { name: "Angular", icon: "/icons/angular.svg" },
       { name: "Tailwind CSS", icon: "/icons/tailwind.png" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name: "HTML", icon: "/icons/html.svg" },
+      { name: "CSS", icon: "/icons/css.svg" },
+      // javascript.svg,
     ],
     Backend: [
       { name: "Node.js", icon: "/icons/node.svg" },
@@ -284,18 +290,30 @@ export default function ModernPortfolio() {
                   <span className="text-lg">hanafee.ym@gmail.com</span>
                 </div>
               </div>
+              <div className="flex justify-center flex-wrap gap-4">
+                {/* GitHub Link */}
+                <a
+                  href="https://github.com/jhin3tytwoo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
+                >
+                  <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                  View My GitHub
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
 
-              {/* GitHub Link */}
-              <a
-                href="https://github.com/jhin3tytwoo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-900 to-gray-700 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
-              >
-                <Github className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                View My GitHub
-                <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+                {/* Resume Download Link */}
+                <a
+                  href="/Hanafi_yaming_Resume.pdf"
+                  download
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 group"
+                >
+                  <FileDown className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                  Download Resume
+                  <ArrowDownCircle className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
