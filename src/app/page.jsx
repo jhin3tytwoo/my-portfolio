@@ -92,39 +92,13 @@ export default function ModernPortfolio() {
 
   const projects = [
     {
-      title: "Training Course Registration Website",
-      tech: "React.js, Node.js, MySQL",
-      description:
-        "A comprehensive platform for course registration with user management, payment integration, and real-time notifications.",
-      highlight: "Full-stack development with payment gateway",
-    },
-    {
-      title: "Travel Website",
-      tech: "Next.js",
-      description:
-        "Interactive travel platform with stunning UI/UX, featuring destination guides, booking system, and user reviews.",
-      highlight: "Interactive UI/UX with modern design",
-    },
-    {
-      title: "Online Shopping Website",
-      tech: "Next.js",
-      description:
-        "E-commerce platform with shopping cart, secure checkout, inventory management, and order tracking.",
-      highlight: "Cart & Checkout system with inventory management",
-    },
-    {
-      title: "CRUD Web Application",
-      tech: "Angular, MySQL",
-      description:
-        "Data management system with full CRUD operations, user authentication, and role-based access control.",
-      highlight: "Enterprise-level data management",
-    },
-    {
-      title: "Weather Forecast App",
+      title: "Weather Forecast",
       tech: "Vue.js, OpenWeatherMap API",
       description:
         "Real-time weather application with location-based forecasts, weather maps, and severe weather alerts.",
       highlight: "Real-time API integration with geolocation",
+      link: "https://weather-app-mu-khaki-74.vercel.app/",
+      image: "/image/Weather.png",
     },
   ];
 
@@ -421,35 +395,61 @@ export default function ModernPortfolio() {
               </span>
             </h2>
 
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-white/20 group"
-                >
-                  <div className="mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform duration-300">
-                      <Code className="w-6 h-6 text-white" />
+            <div className="flex items-center justify-center gap-8">
+              {projects.map((project, index) => {
+                const content = (
+                  <div
+                    key={index}
+                    className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border border-white/20 group"
+                  >
+                    {/* ✅ แสดงรูปถ้ามี image */}
+                    {project.image && (
+                      <div className="mb-6 -mt-4 -mx-4">
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          width={500}
+                          height={400}
+                          className="rounded-xl w-full h-auto object-contain"
+                        />
+                      </div>
+                    )}
+
+                    <div className="mb-6">
+                      <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm font-medium text-blue-600 mb-3">
+                        {project.tech}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm font-medium text-blue-600 mb-3">
-                      {project.tech}
-                    </p>
-                  </div>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-
-                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-2xl">
-                    <p className="text-sm font-medium text-purple-700">
-                      ✨ {project.highlight}
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      {project.description}
                     </p>
+
+                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-2xl">
+                      <p className="text-sm font-medium text-purple-700">
+                        ✨ {project.highlight}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+
+                // ถ้ามีลิงก์ให้ครอบด้วย <a>
+                return project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={index}
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <div key={index}>{content}</div>
+                );
+              })}
             </div>
           </div>
         </section>
