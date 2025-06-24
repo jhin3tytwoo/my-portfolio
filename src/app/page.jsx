@@ -100,6 +100,15 @@ export default function ModernPortfolio() {
       link: "https://weather-app-mu-khaki-74.vercel.app/",
       image: "/image/Weather.png",
     },
+    {
+      title: "Fake Store",
+      tech: "Nuxt 3, Pinia, Fake Store API",
+      description:
+        "An e-commerce showcase built with Nuxt 3 and Pinia, featuring product listings fetched from the Fake Store API. Includes product details, categories, and state management.",
+      highlight: "API-driven product display with Pinia state management",
+      link: "https://nuxt-fake-store.vercel.app/",
+      image: "/image/Fake Store.png",
+    },
   ];
 
   const getSectionIcon = (section) => {
