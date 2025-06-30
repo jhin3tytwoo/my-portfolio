@@ -314,27 +314,41 @@ export default function ModernPortfolio() {
               </span>
             </h2>
 
-            <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500">
-              <div className="flex flex-col lg:flex-row gap-8">
-                <div className="lg:w-1/3">
+            <div className="bg-white rounded-3xl p-6 shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-500">
+              <div className="flex flex-col items-center text-center gap-8">
+                <div>
                   <div className="sticky top-32">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      Western Digital
-                    </h3>
-                    <div className="flex items-center gap-2 text-blue-600 mb-4">
-                      <Calendar className="w-4 h-4" />
-                      <span className="font-medium">
-                        Sep 16, 2024 – Apr 8, 2025
-                      </span>
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      Contract Duration: ~7 months
-                    </p>
+                    <Link
+                      href="https://www.westerndigital.com/th-th/company"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:opacity-90 transition"
+                    >
+                      <Image
+                        src="/image/western-digital.png"
+                        alt="Western Digital Logo"
+                        width={160}
+                        height={80}
+                        className="mb-4 object-contain mx-auto"
+                      />
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2 hover:text-indigo-600 hover:underline">
+                        Western Digital
+                      </h3>
+                      <div className="flex justify-center items-center gap-2 text-blue-600 mb-2">
+                        <Calendar className="w-4 h-4" />
+                        <span className="font-medium">
+                          Sep 16, 2024 – Apr 8, 2025
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-500">
+                        Contract Duration: ~7 months
+                      </p>
+                    </Link>
                   </div>
                 </div>
 
                 <div className="lg:w-2/3">
-                  <div className="prose prose-lg max-w-none">
+                  <div className="prose prose-lg max-w-none text-left sm:text-center">
                     <p className="text-gray-700 leading-relaxed mb-6">
                       Designed and developed a comprehensive{" "}
                       <strong className="text-blue-600">
@@ -345,7 +359,7 @@ export default function ModernPortfolio() {
                       schedules.
                     </p>
 
-                    <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                    <div className="grid sm:grid-cols-2 gap-6 mb-6 text-left sm:text-center">
                       <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl">
                         <h4 className="font-semibold text-blue-900 mb-2">
                           Frontend Development
@@ -370,19 +384,19 @@ export default function ModernPortfolio() {
                       <h4 className="font-semibold text-purple-900 mb-3">
                         Key Features Implemented
                       </h4>
-                      <ul className="text-purple-700 text-sm space-y-2">
+                      <ul className="text-purple-700 text-sm space-y-2 list-disc list-inside">
                         <li>
-                          • Checklist-based interface for tracking maintenance
+                          Checklist-based interface for tracking maintenance
                           tasks
                         </li>
                         <li>
-                          • Real-time status updates and comprehensive reporting
+                          Real-time status updates and comprehensive reporting
                         </li>
                         <li>
-                          • User authentication and role-based access control
+                          User authentication and role-based access control
                         </li>
                         <li>
-                          • MongoDB integration for efficient data storage and
+                          MongoDB integration for efficient data storage and
                           retrieval
                         </li>
                       </ul>
