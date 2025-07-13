@@ -77,10 +77,12 @@ export default function ModernPortfolio() {
       { name: "Node.js", icon: "/icons/node.svg" },
       { name: "Express.js", icon: "/icons/express-js.png" },
       { name: "GraphQL", icon: "/icons/GraphQL.png" },
+      { name: "Go", icon: "/icons/Go.svg" },
     ],
     Database: [
       { name: "MySQL", icon: "/icons/mysql.png" },
       { name: "MongoDB", icon: "/icons/mongodb.svg" },
+      { name: "Postgresql", icon: "/icons/postgresql.svg" },
     ],
     Tools: [
       { name: "GitHub", icon: "/icons/github.svg" },
