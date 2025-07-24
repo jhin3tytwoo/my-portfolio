@@ -100,7 +100,7 @@ export default function ModernPortfolio() {
         "Real-time weather application with location-based forecasts, weather maps, and severe weather alerts.",
       highlight: "Real-time API integration with geolocation",
       link: "https://weather-app-mu-khaki-74.vercel.app/",
-      image: "/image/Weather.png",
+      image: "/image/weather-app.png",
     },
     {
       title: "Fake Store",
@@ -109,7 +109,25 @@ export default function ModernPortfolio() {
         "An e-commerce showcase built with Nuxt 3 and Pinia, featuring product listings fetched from the Fake Store API. Includes product details, categories, and state management.",
       highlight: "API-driven product display with Pinia state management",
       link: "https://nuxt-fake-store.vercel.app/",
-      image: "/image/Fake Store.png",
+      image: "/image/fakestore.png",
+    },
+    {
+      title: "Hotel Booking",
+      tech: "Nuxt 3, Tailwind CSS",
+      description:
+        "A modern hotel booking platform with search, listing, and detailed hotel pages, built using Nuxt.js.",
+      highlight: "User-friendly hotel booking UI with clean design",
+      link: "https://hotel-booking-app.vercel.app/",
+      image: "/image/hotelbooking.png",
+    },
+    {
+      title: "Customer Management",
+      tech: "Next.js, Tailwind CSS",
+      description:
+        "A customer management dashboard using Next.js, with features to view, add, and edit customer data using mock APIs.",
+      highlight: "CRUD operations with React-Bootstrap UI components",
+      link: "https://customer-app.vercel.app/",
+      image: "/image/costumer.png",
     },
   ];
 
@@ -420,7 +438,8 @@ export default function ModernPortfolio() {
               </span>
             </h2>
 
-            <div className="flex items-center justify-center gap-8">
+            {/* ✅ ปรับจาก flex เป็น grid เพื่อรองรับ responsive */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => {
                 const content = (
                   <div
@@ -461,7 +480,6 @@ export default function ModernPortfolio() {
                   </div>
                 );
 
-                // ถ้ามีลิงก์ให้ครอบด้วย <a>
                 return project.link ? (
                   <a
                     href={project.link}
