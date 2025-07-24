@@ -117,7 +117,7 @@ export default function ModernPortfolio() {
       description:
         "A modern hotel booking platform with search, listing, and detailed hotel pages, built using Nuxt.js.",
       highlight: "User-friendly hotel booking UI with clean design",
-      link: "https://hotel-booking-app.vercel.app/",
+      link: "https://hotel-booking-app-three-dusky.vercel.app/",
       image: "/image/hotelbooking.png",
     },
     {
@@ -126,7 +126,7 @@ export default function ModernPortfolio() {
       description:
         "A customer management dashboard using Next.js, with features to view, add, and edit customer data using mock APIs.",
       highlight: "CRUD operations with React-Bootstrap UI components",
-      link: "https://customer-app.vercel.app/",
+      link: "https://nextjs-customer-app.vercel.app/",
       image: "/image/costumer.png",
     },
   ];
